@@ -1,0 +1,15 @@
+Simplify3D Profile for the Monoprice Mini Delta - by dot_bob (Robert Mendon)
+
+Usage:
+
+In Simplify3D go to to Tool-Firmware Configuration and import the file MP Delta Firmware Profile.frm, 
+next load the Monoprice Mini Delta profile.
+
+Before using this profile verify the offset in the GCode script is correct for your machine.
+The offset is found on the line "G29 P6 ZX.XX" where X.XX is the offset.  By default this offset is 0.37mm.
+
+Misc:
+
+The firmware for the MP Mini Delta enforces hardware flow control over the USB CDC link.  The delta will not
+respond to any gcode command unless the serial hardware flow control is selected.  RTS needs to be
+asserted for the MP Mini Delta to respond to commands.
