@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<profile name="Monoprice Mini Delta V1" version="2017-08-05 23:16:38" app="S3D-Software 4.0.0">
+<profile name="Monoprice Mini Delta V2" version="2017-09-29 23:16:38" app="S3D-Software 4.0.0">
   <baseProfile>Custom Profile by Rob Mendon</baseProfile>
   <printMaterial>PLA</printMaterial>
-  <printQuality>High 0.100mm</printQuality>
+  <printQuality>Medium Low 0.200mm</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Extruder 1">
     <toolheadNumber>0</toolheadNumber>
@@ -14,26 +14,26 @@
     <retractionDistance>6</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
     <retractionZLift>0</retractionZLift>
-    <retractionSpeed>2700</retractionSpeed>
+    <retractionSpeed>2100</retractionSpeed>
     <useCoasting>1</useCoasting>
-    <coastingDistance>0.4</coastingDistance>
+    <coastingDistance>0.2</coastingDistance>
     <useWipe>0</useWipe>
     <wipeDistance>1</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.1</layerHeight>
-  <topSolidLayers>3</topSolidLayers>
-  <bottomSolidLayers>3</bottomSolidLayers>
+  <layerHeight>0.2</layerHeight>
+  <topSolidLayers>4</topSolidLayers>
+  <bottomSolidLayers>4</bottomSolidLayers>
   <perimeterOutlines>3</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
-  <startPointOption>3</startPointOption>
+  <startPointOption>2</startPointOption>
   <startPointOriginX>100</startPointOriginX>
   <startPointOriginY>0</startPointOriginY>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>200</firstLayerHeightPercentage>
-  <firstLayerWidthPercentage>105</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
+  <firstLayerHeightPercentage>150</firstLayerHeightPercentage>
+  <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+  <firstLayerUnderspeed>0.3</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftTopLayers>3</raftTopLayers>
@@ -111,7 +111,7 @@
   <minSpeedLayerTime>10</minSpeedLayerTime>
   <minCoolingSpeedSlowdown>20</minCoolingSpeedSlowdown>
   <increaseFanForCooling>1</increaseFanForCooling>
-  <minFanLayerTime>8</minFanLayerTime>
+  <minFanLayerTime>10</minFanLayerTime>
   <maxCoolingFanSpeed>100</maxCoolingFanSpeed>
   <increaseFanForBridging>1</increaseFanForBridging>
   <bridgingFanSpeed>100</bridgingFanSpeed>
@@ -179,10 +179,10 @@
   <diaphragmLayerInterval>20</diaphragmLayerInterval>
   <robustSlicing>1</robustSlicing>
   <mergeAllIntoSolid>0</mergeAllIntoSolid>
-  <onlyRetractWhenCrossingOutline>0</onlyRetractWhenCrossingOutline>
+  <onlyRetractWhenCrossingOutline>1</onlyRetractWhenCrossingOutline>
   <retractBetweenLayers>1</retractBetweenLayers>
-  <useRetractionMinTravel>0</useRetractionMinTravel>
-  <retractionMinTravel>3</retractionMinTravel>
+  <useRetractionMinTravel>1</useRetractionMinTravel>
+  <retractionMinTravel>0.5</retractionMinTravel>
   <retractWhileWiping>1</retractWhileWiping>
   <onlyWipeOutlines>1</onlyWipeOutlines>
   <avoidCrossingOutline>1</avoidCrossingOutline>
@@ -192,7 +192,7 @@
   <toolChangeRetractionSpeed>2400</toolChangeRetractionSpeed>
   <externalThinWallType>1</externalThinWallType>
   <internalThinWallType>1</internalThinWallType>
-  <thinWallAllowedOverlapPercentage>35</thinWallAllowedOverlapPercentage>
+  <thinWallAllowedOverlapPercentage>15</thinWallAllowedOverlapPercentage>
   <singleExtrusionMinLength>0</singleExtrusionMinLength>
   <singleExtrusionMinPrintingWidthPercentage>50</singleExtrusionMinPrintingWidthPercentage>
   <singleExtrusionMaxPrintingWidthPercentage>200</singleExtrusionMaxPrintingWidthPercentage>
@@ -200,43 +200,43 @@
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
   <autoConfigureQuality name="Very High 0.05mm">
     <layerHeight>0.05</layerHeight>
-    <firstLayerHeightPercentage>400</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>600</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>130</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Very High 0.08mm">
     <layerHeight>0.08</layerHeight>
-    <firstLayerHeightPercentage>250</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>375</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>120</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="High 0.100mm">
     <layerHeight>0.1</layerHeight>
-    <firstLayerHeightPercentage>200</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>300</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>105</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium 0.150mm">
     <layerHeight>0.15</layerHeight>
-    <firstLayerHeightPercentage>133</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>200</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium Low 0.200mm">
     <layerHeight>0.2</layerHeight>
-    <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>150</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
+    <firstLayerUnderspeed>0.3</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Low 0.250mm">
     <layerHeight>0.25</layerHeight>
-    <firstLayerHeightPercentage>80</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>120</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>95</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Fast 0.300">
     <layerHeight>0.3</layerHeight>
-    <firstLayerHeightPercentage>66</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>90</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
   </autoConfigureQuality>
@@ -248,7 +248,7 @@
     <minCoolingSpeedSlowdown>20</minCoolingSpeedSlowdown>
     <blipFanToFullPower>1</blipFanToFullPower>
     <increaseFanForCooling>1</increaseFanForCooling>
-    <minFanLayerTime>8</minFanLayerTime>
+    <minFanLayerTime>10</minFanLayerTime>
     <maxCoolingFanSpeed>100</maxCoolingFanSpeed>
     <increaseFanForBridging>1</increaseFanForBridging>
     <bridgingFanSpeed>100</bridgingFanSpeed>
